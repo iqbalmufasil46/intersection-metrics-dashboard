@@ -2,12 +2,12 @@
 
 Intersection Metrics Dashboard
 
---------------------------------- Project Overview --------------------------------------------------------------------------------
+--------------------------------- Project Overview ----------------------------------------------------------------------
 
 - The Intersection Metrics Dashboard is designed to monitor and visualize traffic data from various sensors. The system consists of a data generator, backend service, and frontend application. 
 - The data generator simulates traffic data and sends it to the backend, which processes and stores the data. The frontend provides an intuitive interface for users to view and analyze the data.
 
---------------------------------- Technical Choices ------------------------------------------------------------------------------
+--------------------------------- Technical Choices ---------------------------------------------------------------------
 
 - FastAPI: For its performance and simplicity in building RESTful APIs.
 - React with Material-UI: For creating a modern, responsive frontend application.
@@ -16,11 +16,12 @@ Intersection Metrics Dashboard
 
 --------------------------------- Assumptions and Simplifications ------------------------------------------------------
 
+- Both CSV files (counts and system health) are automatically loaded into the database during app startup for the dates 17th and 18th.
 - Data is simulated and may not represent real-world traffic patterns accurately.
 - The data generator runs indefinitely and needs to be manually stopped.
 - Simplified error handling in some parts of the code for brevity.
 
---------------------------------- Ideas for Future Improvements ------------------------------------------------------
+--------------------------------- Ideas for Future Improvements --------------------------------------------------------
 
 - Real-time Data Processing: Improve real-time data handling with more robust WebSocket connections.
 - Enhanced UI/UX: Add more visualizations and refine the user interface.
@@ -28,7 +29,7 @@ Intersection Metrics Dashboard
 - Testing: Implement comprehensive unit and integration tests.
 - Security: Add authentication and authorization mechanisms.
 
----------------------------------- Architecture -----------------------------------------------------------------------------
+---------------------------------- Architecture ------------------------------------------------------------------------
 
 1. Frontend: 
 
@@ -63,10 +64,10 @@ Intersection Metrics Dashboard
 •	Docker: Utilizes Docker and Docker Compose to containerize the frontend, backend, and database.
 
 
--------------------------------------- Running the Project with Docker ------------------------------------------------------
+-------------------------------------- Running the Project with Docker -------------------------------------------------
 
 1. Clone the Repository:
-•	git clone https://github.com/yourusername/intersection-metrics-dashboard.git
+•	git clone --branch Submission --single-branch https://github.com/iqbalmufasil46/intersection-metrics-dashboard.git
 •	cd intersection-metrics-dashboard
     
 2. Set Up Environment Variables:
@@ -88,10 +89,10 @@ There are two environment file once inside Backend and one inside Frontend.Make 
 
 
 
-------------------------------------Running the Project without Docker --------------------------------------
+------------------------------------Running the Project without Docker -------------------------------------------------
 
 1. Clone the Repository:
-•	git clone https://github.com/yourusername/intersection-metrics-dashboard.git
+•	git clone --branch Submission --single-branch https://github.com/iqbalmufasil46/intersection-metrics-dashboard.git
 •	cd intersection-metrics-dashboard
     
 2. Set Up Environment Variables:
@@ -124,10 +125,6 @@ There are two environment file once inside Backend and one inside Frontend.Make 
 6. Run Data Generator:
 •	cd  data-generator
 •	python generator.py
-
-
-
-
 
 
 
