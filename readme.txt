@@ -1,3 +1,5 @@
+
+
 Intersection Metrics Dashboard
 
 --------------------------------- Project Overview --------------------------------------------------------------------------------
@@ -43,29 +45,32 @@ Intersection Metrics Dashboard
 •	WebSocket Support: FastAPI-SocketIO for real-time communication with the frontend.
 
 3. Database: 
+
 •	Technology: PostgreSQL.
 •	Counts: Stores vehicle and pedestrian detection counts with timestamp, sensor ID, and approach information.
 •	System Health: Tracks sensor uptime and downtime.
 •	Configuration: Stores configuration settings for the real-time data generator.
 
 4. Real-time Data Generator: 
+
 •	Technology: Python.
 •	Simulates Data: Generates road intersection data, including counts data and system health data.
 •	Configurable: Allows users to adjust generation rate, vehicle and pedestrian probabilities, system downtime probability, and traffic patterns.
 •	Integration: Sends generated data to the backend for storage and real-time updates to the frontend using web socket.
 
 5. Deployment: 
+
 •	Docker: Utilizes Docker and Docker Compose to containerize the frontend, backend, and database.
 
 
------------------------- Running the Project with Docker------------------------------------------------------
+-------------------------------------- Running the Project with Docker ------------------------------------------------------
 
 1. Clone the Repository:
 •	git clone https://github.com/yourusername/intersection-metrics-dashboard.git
 •	cd intersection-metrics-dashboard
     
 2. Set Up Environment Variables:
-There are two enveiornmnet file once inside Backend and one inside Frontend.Make sure db credentials are set correctly.
+There are two environment file once inside Backend and one inside Frontend.Make sure db credentials are set correctly.
   Backend Env:
     •	DATABASE_URL=postgresql://xyz:xyz@db:5432/intersection_metrics
 
@@ -82,14 +87,15 @@ There are two enveiornmnet file once inside Backend and one inside Frontend.Make
 •	Data Generator: http://localhost:5001
 
 
-------------------------------------Running the Project without Docker--------------------------------------
+
+------------------------------------Running the Project without Docker --------------------------------------
 
 1. Clone the Repository:
 •	git clone https://github.com/yourusername/intersection-metrics-dashboard.git
 •	cd intersection-metrics-dashboard
     
 2. Set Up Environment Variables:
-There are two enveiornmnet file once inside Backend and one inside Frontend.Make sure db credentials are set correctly.  
+There are two environment file once inside Backend and one inside Frontend.Make sure db credentials are set correctly.  
   Backend Env:
     •	DATABASE_URL=postgresql://xyz:xyz@db:5432/intersection_metrics
   Frontend Env:
@@ -118,4 +124,10 @@ There are two enveiornmnet file once inside Backend and one inside Frontend.Make
 6. Run Data Generator:
 •	cd  data-generator
 •	python generator.py
+
+
+
+
+
+
 
